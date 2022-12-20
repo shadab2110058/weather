@@ -11,3 +11,118 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.full{
+   height: 100vh;
+   width: 100vw;
+   background-image:url("images/weather\ background.webp");
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container{
+  height: 75%;
+  width: 55%;
+  border-radius: 10px;
+  background-color:white;
+  opacity: 0.4;
+  text-align: center;
+  
+}
+
+::placeholder{
+  color: silver;
+}
+
+.container h1{
+height: 3rem;
+color: blue;
+}
+
+.container input{
+  height: 3rem;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: black;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+button{
+  height: 3rem;
+  margin-left: 1rem;
+  width: 6rem;
+  background-color: green;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.live-weather-condition{
+  color:blue;
+}
+
+.temp{
+  color: green;
+}
+.max{
+  display:flex;
+  flex-direction: row;
+  /* margin-left: 3rem; */
+  text-align: center;
+  justify-content: center;
+}
+.min{
+  padding-left: .5rem;
+  color: blue;
+  word-wrap: wrap;
+}
+
+.cloud{
+  position: relative;
+  left:-18%;
+  top: 4rem;
+}
+
+@media screen and (max-width: 320px) 
+{
+  .container{
+    width: 100%;
+    height: 70%;
+    
+  }
+}
+
+@media screen and (max-width: 376px) 
+{
+  .container{
+    width: 100%;
+    height: 70%;
+  }
+ 
+}
+
+@media screen and (max-width: 426px) 
+{
+  .container{
+    width: 90%;
+    height: 70%;
+  }
+  .cloud{
+    position: relative;
+    left:-35%;
+    
+  }
+
+}
+
+@media screen and ( max-width: 768px) 
+{
+  .container{
+    width: 80%;
+    height: 70%;
+    
+  }
+}
