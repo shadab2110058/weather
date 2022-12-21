@@ -10,15 +10,13 @@ const Front = () => {
 
  })
  const getWeatherDetails = (cityName)=>{
-  if(!cityName) return 
+ 
   const apiURL = "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid="+ apiKey +""
+  
   axios.get(apiURL).then((res)=>{
-    console.log("response",res.data)
+    
        setData(res.data)
-  }).catch((err)=>{
-    // console.log("err",err)
   })
-
  }
  const handleInputChange=(e)=>{
       setInputCity(e.target.value); 
