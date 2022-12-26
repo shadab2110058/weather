@@ -4,7 +4,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;   
 }
 
 code {
@@ -20,12 +20,18 @@ code {
    justify-content: center;
    align-items: center;
 }
+
+.cloud{
+  position: relative;
+  top: 4.5rem;
+  right: 8.5rem;
+
+}
 .container{
   height: 75%;
   width: 55%;
   border-radius: 10px;
-  background-color:white;
-  opacity: 0.4;
+  background-color:rgba(255, 255, 255, 0.651);
   text-align: center;
   
 }
@@ -46,7 +52,7 @@ color: blue;
   text-align: center;
   font-size: larger;
   font-weight: bolder;
-  background-color: black;
+  background-color:black;
   border-radius: 10px;
   color: aliceblue;
 }
@@ -55,10 +61,11 @@ button{
   height: 3rem;
   margin-left: 1rem;
   width: 6rem;
-  background-color: green;
+  background-color: black;
   border-radius: 10px;
   font-size: larger;
   font-weight: bolder;
+  color: white;
 }
 .live-weather-condition{
   color:blue;
@@ -70,7 +77,6 @@ button{
 .max{
   display:flex;
   flex-direction: row;
-  /* margin-left: 3rem; */
   text-align: center;
   justify-content: center;
 }
@@ -80,19 +86,20 @@ button{
   word-wrap: wrap;
 }
 
-.cloud{
-  position: relative;
-  left:-18%;
-  top: 4rem;
-}
 
 @media screen and (max-width: 320px) 
 {
   .container{
     width: 100%;
-    height: 70%;
-    
+    height: 90%;
   }
+  .cloud{
+    display: none;
+  }
+  h3{
+    font-size: small;
+  }
+
 }
 
 @media screen and (max-width: 376px) 
@@ -101,6 +108,14 @@ button{
     width: 100%;
     height: 70%;
   }
+  .cloud{
+    display: none;
+  }
+  h3{
+    font-size: small;
+  }
+
+  
  
 }
 
@@ -111,9 +126,10 @@ button{
     height: 70%;
   }
   .cloud{
-    position: relative;
-    left:-35%;
-    
+    display: none;
+  }
+  h3{
+    font-size: small;
   }
 
 }
@@ -124,5 +140,8 @@ button{
     width: 80%;
     height: 70%;
     
+  }
+  .cloud{
+    display: none;
   }
 }
