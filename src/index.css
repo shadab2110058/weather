@@ -66,6 +66,8 @@ button{
   font-size: larger;
   font-weight: bolder;
   color: white;
+  position: relative;
+  top: .5rem;
 }
 .live-weather-condition{
   color:blue;
@@ -99,6 +101,7 @@ button{
   h3{
     font-size: small;
   }
+  
 
 }
 
@@ -113,6 +116,12 @@ button{
   }
   h3{
     font-size: small;
+  }
+  .button{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
   }
 }
 

@@ -43,13 +43,14 @@ const Front = () => {
           <h1>Weather App</h1>
         </div>
         <input type="text" placeholder='Enter city' onChange={handleInputChange}></input>
-        <button onClick={handleSearch}> search</button>
+        
+        <div className='button'><button onClick={handleSearch}> search</button></div>
         <h2 className='live-weather-condition'>Live Weather Condition</h2>
         <h2 className='temp'>{((data?.main?.temp) - 273.15).toFixed(2)}°C</h2>
         <h2 className='cityName'>{data?.name}</h2>
         <div className='max'>
-          <div className='min'> <h3 className='max-temp'>Max:{((data?.main?.temp_max) - 273.15).toFixed(2)}</h3></div>
-          <div className='min'> <h3 className='max-temp'>Min:{((data?.main?.temp_min) - 273.15).toFixed(2)}</h3></div>
+          <div className='min'> <h3 className='max-temp'>Max:{((data?.main?.temp_max) - 273.15).toFixed(2)}°C</h3></div>
+          <div className='min'> <h3 className='max-temp'>Min:{((data?.main?.temp_min) - 273.15).toFixed(2)}°C</h3></div>
           <div className='min'> <h3 className='max-temp'>Hum:{data?.main?.humidity}%</h3></div>
         </div>
       </div>
