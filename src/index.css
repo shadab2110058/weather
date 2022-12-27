@@ -72,7 +72,7 @@ button{
 }
 
 .temp{
-  color: green;
+  color:red;
 }
 .max{
   display:flex;
