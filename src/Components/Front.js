@@ -47,13 +47,15 @@ const Front = () => {
         
         <div className='button'><button  onClick={handleSearch}> search</button></div>
         <h2 className='live-weather-condition'>Live Weather Condition</h2>
-        <h2 className='temp'>{((data?.main?.temp) - 273.15).toFixed(2)}°C</h2>
+        <h2 className='temp'>{((data?.main?.temp) - 273.15).toFixed(2)}°C </h2>
         <h2 className='cityName'>{data?.name},{data?.sys?.country}</h2>
         <div className='max'>
-          <div className='min'> <h3 className='max-temp'>Max_temp:<br></br>{((data?.main?.temp_max) - 273.15).toFixed(2)  }°C</h3></div>
-          <div className='min'> <h3 className='max-temp'>Min_temp:<br></br>{((data?.main?.temp_min) - 273.15).toFixed(2)}°C</h3></div>
-          <div className='min'> <h3 className='max-temp'>humidity:<br></br>{data?.main?.humidity}%</h3></div>
-          <div className='min'> <h3 className='max-temp'>Speed:<br></br>{data?.wind?.speed}m/s</h3></div>
+          <div className='min'> <h3 className='max-temp '>Max_temp<br></br>{((data?.main?.temp_max) - 273.15).toFixed(2)  }°C</h3></div>
+          <div className='min'> <h3 className='max-temp min-temp'>Min_temp<br></br>{((data?.main?.temp_min) - 273.15).toFixed(2)}°C</h3></div>
+          <div className='min'> <h3 className='max-temp humidity'>humidity<br></br>{data?.main?.humidity}%</h3></div>
+          <div className='min'> <h3 className='max-temp speed'>Speed<br></br>{data?.wind?.speed}m/s</h3></div>
+          
+
       </div>
     </div>
     </div>

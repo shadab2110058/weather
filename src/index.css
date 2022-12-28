@@ -86,6 +86,7 @@ button{
   flex-direction: row;
   text-align: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .min{
   padding-left: .5rem;
@@ -94,6 +95,7 @@ button{
   padding:  -1rem 1rem;
   position: relative;
   bottom:2rem;
+  
 }
 
 
