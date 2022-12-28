@@ -98,14 +98,9 @@ button{
   
 }
 
-
-
 @media screen and (max-width: 320px) 
 {
-  .container{
-    width: 100%;
-    height: 90%;
-  }
+  
   .cloud{
     display: none;
   }
@@ -118,10 +113,7 @@ button{
 
 @media screen and (max-width: 376px) 
 {
-  .container{
-    width: 100%;
-    height: 70%;
-  }
+  
   .cloud{
     display: none;
   }
@@ -138,10 +130,7 @@ button{
 
 @media screen and (max-width: 426px) 
 {
-  .container{
-    width: 90%;
-    height: 70%;
-  }
+  
   .cloud{
     display: none;
   }
@@ -155,7 +144,7 @@ button{
 {
   .container{
     width: 80%;
-    height: 70%;
+    height: 90%;
     
   }
   .cloud{
