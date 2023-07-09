@@ -1,8 +1,7 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Front from './Components/Front'
 import LoadingBar from 'react-top-loading-bar';
 import "./App.css"
-import { useState } from 'react';
 
 const App = () => {
 
