@@ -3,10 +3,10 @@ import { FaCloud } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 const Front = (props) => {
   const apiKey = "b2dcbcd26cdccfeac192ff8f877e233f"
-  const [inputCity, setInputCity] = useState("Bareily")
+  const [inputCity, setInputCity] = useState("Bareilly")
   const [data, setData] = useState({
 
   })
@@ -34,8 +34,12 @@ const Front = (props) => {
 
   const handleSearch = () => {
     getWeatherDetails(inputCity);
-
   }
+
+  useEffect(()=>{
+    getWeatherDetails(inputCity);
+    // eslint-disable-next-line
+  },[]);
 
   return (
     <div className='full'>
